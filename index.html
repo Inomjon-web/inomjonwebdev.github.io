@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inomjon | Dev</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <section id="home">
+      <header>
+        <div class="home-container">
+          <div class="logo">
+            <h1>Inomjon |<span> Dev</span></h1>
+          </div>
+          <nav>
+            <!-- <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="cancel-icon" id="cancel-icon" onclick="toggleMenu()">✕</div> -->
+            <div class="menu-icon">
+              <span class="icon-menu">&#9776;</span>
+              <span class="icon-cancel">&#x2715;</span>
+          </div>
+            <ul class="nav-links" id="menu">
+              <li><a href="#home" class="active">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#services">My Works</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <button id="toggle-dark-mode"><i class="fas fa-moon"></i></button>           
+            <script>
+               document.getElementById('toggle-dark-mode').addEventListener('click', function () {
+    document.body.classList.toggle('dark-mode');
+    this.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        this.innerHTML = '<i class="bx bx-sun"></i>';
+    } else {
+        this.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+});
+            </script>
+          </nav>
+        </div>
+      </header>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.querySelector('.icon-menu');
+    const cancelIcon = document.querySelector('.icon-cancel');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.style.display = 'flex';
+        menuIcon.style.display = 'none';
+        cancelIcon.style.display = 'block';
+    });
+
+    cancelIcon.addEventListener('click', () => {
+        navLinks.style.display = 'none';
+        cancelIcon.style.display = 'none';
+        menuIcon.style.display = 'block';
+    });
+});
+      </script>
+        <div class="home-page-text-img">
+          <div class="home-text">
+            <label for="">Hello, my name is </label>
+            <h1>Inom Alijonov</h1>
+            <h2>I'm <span class="auto-type"></span></h2>
+            <a href="#contact" class="contact-btn">Contact Me</a>
+            <script>
+                // ===== AUTO-TYPE ====
+
+                  var typed = new Typed(".auto-type",{
+                    strings: ["a frontend developer"],
+                      typeSpeed : 150,
+                      backSpeed: 150,
+                      looped : true
+  })
+            </script>
+          </div>
+          <!-- <div class="home-img">
+            <img src="images/crop.png" alt="">
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======= ABOUT PAGE ============= -->
+    
+    <section id="about">
+      <div class="container">
+        <div class="about-page">
+          <div class="about-img">
+            <img src="images/inom.png" alt="Inom Alijonov">
+          </div>
+          <div class="about-text">
+            <h1>About me</h1>
+            <label>Inomjon Alijonov</label>
+            <p>Hello, I'm Inomjon Alijonov I'm from Jizzakh in Uzbekistan. I'm 16 years old and I learn programming from teamit training center</p><br>
+            <a href="https://t.me/Inombe">Let's talk</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    
+  
+    <!-- ======== SERVICES ================ -->
+
+    <section id="services">
+      <div class="container">
+        <div class="my-works">
+          <div class="service-h1">
+            <h1>My Works</h1>
+            <p>Tools I Use</p>
+       </div>
+          <div class="columns-content">
+            <div class="columns">
+              <i class="iconlar"><i class='bx bxl-html5'></i></i>
+              <h3>HTML</h3> 
+              </div>
+            <div class="columns">
+              <i class="iconlar"><i class='bx bxl-css3' ></i></i>
+             <h3>CSS</h3> 
+            </div>
+            <div class="columns">
+              <i class="iconlar"><i class='bx bxs-file-js' ></i></i>
+             <h3>JavaScript</h3> 
+            </div>
+            <div class="columns">
+              <img class="iconlar" src="images/vscode.png" alt="">
+             <h3>Visual Studio Code</h3> 
+            </div>
+            <div class="columns">
+              <img class="iconlar" src="images/git.png" alt="">
+             <h3>GitHub</h3> 
+            </div>
+            <div class="columns">
+              <img class="iconlar" src="images/vercell.png" alt="">
+             <h3>Vercel</h3> 
+            </div>
+          </div>
+        </div>
+     
+
+      <!--  MY PROJECTS -->
+
+      <section id="projects" class="container">
+        <div class="project-text-up">
+            <h1>My Projects</h1>
+            <p>I hope you enjoy these sites</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="images/overlay2.jpg" alt="Project 1">
+                <div class="overlay">
+                    <div class="overlay-text"><a href="plitka.html">плитка</a></div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/overlay1.jpg" alt="Project 2">
+                <div class="overlay">
+                    <div class="overlay-text"><a href="product.html">product</a></div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="images/overlay3.jpg" alt="Project 3">
+                <div class="overlay">
+                    <div class="overlay-text"><a href="coffe.html">coffe</a></div>
+                </div>
+            </div>
+            <!-- Add more project items as needed -->
+        </div>
+    </section>
+        
+        
+        <!-- ==== SMALL ANIMATIONS === -->
+        <div class="small-animate">
+          <div class="animate-text">
+            <h1>Small Animations</h1>
+            <p>Animations made using html css and js</p>
+          </div>
+          <div class="animate-container">
+            <div class="animations">
+              <p>Plus animation</p>
+              <img src="images/plyus.png" alt="">
+              <div class="animate-text-col">
+                <a href="plyus.html"><button>show<i class='bx bx-right-arrow-alt'></i></button></a>
+              </div>
+            </div>
+            <div class="animations">
+              <p>New Year animation</p>
+              <img src="images/2024.jpg" alt="">
+              <div class="animate-text-col">
+                <a href="newyear.html"><button>show<i class='bx bx-right-arrow-alt'></i></button></a>
+              </div>
+            </div>
+            <div class="animations">
+              <p>Clock animation</p>
+              <img src="images/clock.jpg" alt="">
+              <div class="animate-text-col">
+                <a href="clock.html"><button>show<i class='bx bx-right-arrow-alt'></i></button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+    <!-- ========= RESUME PAGE ==================== -->
+
+    <section id="education">
+      <div class="container">
+        <div class="education-text">
+          <h1>Education</h1>
+          <p>Places where I was educated</p>
+        </div>
+       <div class="green-grid">
+          <div class="card">
+            <img src="images/itpark.jpg" alt="">
+            <p>IT Park Jizzax korporativ akselerator doirasidagi loyihalarni tanlab oldi</p>
+                <p class="read"  style="text-align:  center;"> 
+                    <a href="https://it-park.uz/ru/itpark/news/it-park-jizzakh-otobral-proekty-v-ramkah-korporativnogo-akseleratora" class="read-button" href="">Read More</a>
+                </p>
+            </div>
+        <div class="card">
+          <div class="column-edc">
+            <img src="images/team.jpg" alt="">
+            <p>Zamonaviy kasblarni biz bilan o'rganing! <br>.</p>
+            <p  class="read" style="text-align:  center;"> 
+              <a href="https://www.teamit.uz/" class="read-button" href="">Read More</a>
+            </p>
+          </div>
+           </div>
+          </div>
+      </div>
+     </section>
+     
+
+     <!-- ======= CONTACT PAGE ====================== -->
+
+     <section id="contact">
+      <div class="container">
+        <div class="contact-text">
+          <h1>Contact Me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium dignissimos labore vel amet error ex.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-g1">
+            <i>
+              <ion-icon name="home-outline"></ion-icon>
+            </i>
+            <h4>Address</h4>
+            <p>Jizzakh in Uzbekistan</p>
+          </div>
+          <div class="contact-g2">
+            <i>
+              <ion-icon name="call-outline"></ion-icon>
+            </i>
+            <h4>Contact Number</h4>
+            <p>+998 90 025 15 40</p>
+          </div>
+          <div class="contact-g3">
+            <i>
+              <ion-icon name="send-outline"></ion-icon>
+            </i>
+            <h4>Telegram</h4>
+            <p><a href="https://t.me/Inombe">@inomjon</a></p>
+          </div>
+          <div class="contact-g4">
+            <i>
+              <ion-icon name="earth-outline"></ion-icon>
+            </i>
+            <h4>Email Address</h4>
+            <p>inombekalijonov18@gmail.com</p>
+          </div>
+          
+        </div>
+      </div>
+     </section>
+
+
+     <!-- ========== FOOTER ================= -->
+
+     
+     <footer>
+      <div class="footerContainer">
+        <div class="footerBottom">
+          <p>Copyright ©2024; Designed by <span class="designer">Inomjon</span><a href="https://www.instagram.com/inom.alijonov"><i class='bx bxl-instagram'></i></a></p>
+          
+        </div>
+       </div>
+     </footer>
+
+
+
+<script src="script.js"></script>
+      </body>
+      </html>
+
+
+
+     

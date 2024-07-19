@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    background: url(images/cofe.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+header .navbar {
+    display: flex;
+    align-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar .logo {
+    color: #fff;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.navbar .menu-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.navbar a {
+    color: #fff;
+}
+.navbar a:hover {
+    color: #C06B3E;
+}
+
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.hero-section .content {
+    color: #fff;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.hero-section .content h1 {
+    font-size: 3rem;
+    max-width: 600px;
+}
+.hero-section .content p {
+    font-size: 300;
+    margin-top: 15px;
+    max-width: 600px;
+}
+.hero-section .content button {
+    background: #fff;
+    outline: none;
+    order: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 38px;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.hero-section .content button:hover {
+    color: #fff;
+    background-color: #C06B3E;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .cancel-icon {
+      display: none;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background-color: #123123;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* header height */
+      left: 0;
+      padding: 10px 0;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav ul.active + .cancel-icon {
+      display: block;
+    }
+  }
